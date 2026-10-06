@@ -1,0 +1,46 @@
+{
+    "name": "Arab Desk Theme",
+    "doctype": "DocType",
+    "module": "Arab Themes",
+    "is_submittable": 0,
+    "autoname": "name",
+    "fields": [
+        {
+            "fieldname": "name",
+            "label": "Theme Name",
+            "fieldtype": "Data",
+            "reqd": 1,
+            "unique": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "description",
+            "label": "Description",
+            "fieldtype": "Text Editor",
+            "options": "Small"
+        },
+        {
+            "fieldname": "css",
+            "label": "CSS Overrides",
+            "fieldtype": "Code",
+            "options": "CSS",
+            "reqd": 1
+        },
+        {
+            "fieldname": "js",
+            "label": "JavaScript Overrides",
+            "fieldtype": "Code",
+            "options": "JS"
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "permlevel": 0,
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+}

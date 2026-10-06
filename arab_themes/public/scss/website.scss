@@ -1,0 +1,13 @@
+// Copyright (c) 2025, Arab Themes and contributors. License: MIT.
+//
+// This SCSS is appended to every website theme by Frappe's website theme
+// generator (see hooks.py: website_theme_scss). It ensures the theme switcher
+// widget always has the CSS variables it needs to render, regardless of which
+// theme is active.
+
+:root {
+    --arab-themes-primary: var(--primary, var(--primary-color, #8B4513));
+    --arab-themes-text: var(--text-color, inherit);
+    --arab-themes-bg: var(--bg-color, #fff);
+    --arab-themes-border: var(--border-color, #e0e0e0);
+}

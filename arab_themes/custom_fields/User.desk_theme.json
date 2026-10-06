@@ -1,0 +1,11 @@
+{
+    "custom_field": {
+        "doctype": "User",
+        "fieldname": "desk_theme",
+        "label": "Desk Theme",
+        "fieldtype": "Link",
+        "options": "Arab Desk Theme",
+        "in_list_view": 1,
+        "insert_after": "first_name"
+    }
+}

@@ -1,0 +1,102 @@
+/* Copyright (c) 2025, Arab Themes and contributors. License: MIT. */
+
+.arab-themes-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.arab-themes-switcher__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius, 6px);
+    background: transparent;
+    color: var(--text-color, inherit);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.arab-themes-switcher__btn:hover,
+.arab-themes-switcher__btn:focus {
+    background: var(--primary-color, rgba(0, 0, 0, 0.05));
+    outline: none;
+}
+
+.arab-themes-switcher__icon {
+    font-size: 1rem;
+}
+
+.arab-themes-switcher__menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1000;
+    min-width: 180px;
+    margin-top: 4px;
+    padding: 6px;
+    border: 1px solid var(--border-color, #e0e0e0);
+    border-radius: var(--border-radius, 6px);
+    background: var(--bg-color, #fff);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+}
+
+.arab-themes-switcher__menu.is-open {
+    display: flex;
+}
+
+.arab-themes-switcher__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: var(--border-radius, 6px);
+    background: transparent;
+    color: var(--text-color, inherit);
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.arab-themes-switcher__item:hover,
+.arab-themes-switcher__item:focus {
+    background: var(--primary-color, rgba(0, 0, 0, 0.05));
+    outline: none;
+}
+
+.arab-themes-switcher__item.is-active {
+    font-weight: 600;
+}
+
+.arab-themes-switcher__swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+}
+
+.arab-themes-switcher__empty {
+    padding: 10px;
+    font-size: 0.85rem;
+    color: var(--text-color, inherit);
+    opacity: 0.7;
+}
+
+/* RTL-friendly placement */
+html[dir="rtl"] .arab-themes-switcher {
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .arab-themes-switcher__menu {
+        right: auto;
+        left: 0;
+    }
+}
