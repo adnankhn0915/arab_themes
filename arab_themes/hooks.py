@@ -43,5 +43,5 @@ user_include_js = "arab_themes/public/js/arab_desk_theme.js"
 # End of file
 
 
-app_include_js = ["/assets/arab_themes/js/arab_desk_theme.js?v=8", "/assets/arab_themes/js/arab_desk_sidebar.js?v=8", "/assets/arab_themes/js/arab_desk_switcher.js?v=8"]
+app_include_js = ["/assets/arab_themes/js/arab_desk_theme.js?v=9", "/assets/arab_themes/js/arab_desk_sidebar.js?v=9", "/assets/arab_themes/js/arab_desk_switcher.js?v=9"]
 boot_session = "arab_themes.boot.boot_session"

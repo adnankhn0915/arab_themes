@@ -9,7 +9,8 @@
   const r = Number(t.border_radius) || 8;
 
   const css = `
-    :root { --primary: ${primary}; --icon-stroke: ${t.navbar_text}; }
+    :root { --primary: ${primary}; }
+    .navbar { --icon-stroke: ${t.navbar_text}; }
 
     body { background-color: ${t.body_bg} !important;
            font-family: ${t.font_family} !important; }
@@ -53,6 +54,11 @@
       border-radius: ${r + 6}px !important;
       border: 1px solid ${soft} !important;
       box-shadow: 0 2px 10px rgba(20, 40, 90, 0.06) !important; }
+
+    /* Default buttons stay visible on tinted pages */
+    .btn-default, .btn-secondary { background-color: #ffffff !important;
+      border: 1px solid ${soft} !important; color: #374151 !important; }
+    .btn-default:disabled, .btn-default.disabled { opacity: 0.55 !important; }
 
     /* 2. Accent: input focus */
     .form-control { border-radius: ${r}px !important; }
